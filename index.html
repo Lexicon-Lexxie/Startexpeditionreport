@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expedition Report</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="report-shell">
+      <header class="report-header">
+        <p class="eyebrow">CS-110 // Expedition Report</p>
+        <h1>Replace this with your mission title.</h1>
+        <p>Replace this sentence with the destination, genre, and purpose of your report.</p>
+      </header>
+
+      <section class="scene is-active" data-scene="0">
+        <p class="scene-number">Scene 01 // Arrival</p>
+        <h2>What did your character expect to find?</h2>
+        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited arrival image here.">Add arrival image</div>
+        <p>Replace this paragraph with the opening of your expedition account.</p>
+      </section>
+
+      <section class="scene" data-scene="1" hidden>
+        <p class="scene-number">Scene 02 // Discovery</p>
+        <h2>What changed the mission?</h2>
+        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited discovery image here.">Add discovery image</div>
+        <p>Replace this paragraph with the evidence, creature, failure, or absurd complication your character discovered.</p>
+      </section>
+
+      <section class="scene" data-scene="2" hidden>
+        <p class="scene-number">Scene 03 // Outcome</p>
+        <h2>What should Kairova do next?</h2>
+        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited outcome image here.">Add outcome image</div>
+        <p>Replace this paragraph with the result and the recommendation for your report's audience.</p>
+      </section>
+
+      <nav class="scene-controls" aria-label="Story scenes">
+        <button id="previous-scene" type="button">Previous</button>
+        <span id="scene-status" aria-live="polite">Scene 1 of 3</span>
+        <button id="next-scene" type="button">Next</button>
+      </nav>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
