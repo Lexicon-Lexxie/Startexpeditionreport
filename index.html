@@ -3,48 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expedition Report</title>
+    <title>C-21 // Horror | Expedition Report</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="report-shell">
       <header class="report-header">
-        <p class="eyebrow">CS-110 // Expedition Report</p>
-        <h1>C-21 // Horror</h1>
-        <p>The report is for La Piz, they are stranded in the deep caves of Cranyoen.</p>
+        <div class="header-meta">
+          <p class="eyebrow">CS-110 // Expedition Report</p>
+          <p class="status"><span></span> Case file 04 / Active</p>
+        </div>
+        <h1>C-21 <em>//</em> Horror</h1>
+        <p class="intro">A recovery report for La Piz, stranded in the deep caves of Cranyoen.</p>
+        <dl class="mission-facts">
+          <div><dt>Location</dt><dd>Cranyoen caves</dd></div>
+          <div><dt>Subject</dt><dd>La Piz</dd></div>
+          <div><dt>Risk level</dt><dd>Severe</dd></div>
+        </dl>
       </header>
 
       <section class="scene is-active" data-scene="0">
         <p class="scene-number">Scene 01 // The discovery</p>
         <h2>The discovery</h2>
-        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited arrival image here.">Add arrival image</div>
-        <p>It discovered the dark caves of Cranyoen. The mysterious and dangerous creatures that lurk inside. Team work is crucial to avoid fatal situations.</p>
+        <figure class="scene-image"><img src="images/study-panorama-reference-v2.png" alt="A study of the cavern expedition route" /><figcaption>Field scan // Entry route</figcaption></figure>
+        <p>We discovered the dark caves of Cranyoen and the dangerous creatures that lurk inside. Teamwork became the only reliable way to avoid a fatal first contact.</p>
       </section>
 
       <section class="scene" data-scene="1" hidden>
         <p class="scene-number">Scene 02 // The complication</p>
         <h2>The complication</h2>
-        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited discovery image here.">Add discovery image</div>
-        <p>The creatures were unforgiving, and having everyone work together as a team. The team all had different ideas, some becoming rouge. Ultimately, splitting caused more damage than the creatures alone</p>
+        <figure class="scene-image"><img src="images/cave.jpg" alt="A dark cave passage" /><figcaption>Field scan // Unstable passage</figcaption></figure>
+        <p>The creatures were unforgiving. The team had different ideas, and some went rogue. Splitting up caused more damage than the creatures could have managed alone.</p>
       </section>
 
       <section class="scene" data-scene="2" hidden>
         <p class="scene-number">Scene 03 // Response</p>
         <h2>Our Response</h2>
-        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited outcome image here.">Add outcome image</div>
-        <p>Sasakia Charonda is the most unusual subject, it is a creature who's heritage traces back to the dark caves. It has supernatural powers to communicate via energy, but it can also cause psychic manipulations on any living creature.</p>
+        <figure class="scene-image"><img src="images/Deathclaw_Virgil_Cave_2.jpg" alt="A hostile creature inside a cave" /><figcaption>Field scan // Contact recorded</figcaption></figure>
+        <p>Sasakia Charonda was the most unusual subject: a creature whose heritage traces back to the dark caves. It communicates through energy and can manipulate the minds of living creatures.</p>
       </section>
 
       <section class="scene" data-scene="3" hidden>
         <p class="scene-number">Scene 04 // Outcome</p>
         <h2>The Outcome</h2>
-        <div class="image-placeholder" role="img" aria-label="Add an original or properly credited outcome image here.">Add outcome image</div>
-        <p>Half the team had perished during the journey, but the recovery of knowledge of the cave brought lots of insight into the feral world of the beasts, La Piz was transported successfully, and was able to translate the scrolls.</p>
+        <figure class="scene-image"><img src="images/study-panorama-reference-v2.png" alt="The expedition's recovered cave study" /><figcaption>Field scan // Recovery complete</figcaption></figure>
+        <p>Half the team perished during the journey, but our notes revealed new insight into the feral world below. La Piz was transported safely and translated the recovered scrolls.</p>
       </section>
 
       <nav class="scene-controls" aria-label="Story scenes">
         <button id="previous-scene" type="button">Previous</button>
         <span id="scene-status" aria-live="polite">Scene 1 of 4</span>
+        <div class="scene-progress" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <button id="next-scene" type="button">Next</button>
       </nav>
     </main>
